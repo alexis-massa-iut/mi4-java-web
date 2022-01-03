@@ -1,4 +1,4 @@
-package fr.iut2.massaanotesabsences;
+package fr.iut2.massaa_notesabsences;
 
 import java.io.*;
 import javax.servlet.http.*;

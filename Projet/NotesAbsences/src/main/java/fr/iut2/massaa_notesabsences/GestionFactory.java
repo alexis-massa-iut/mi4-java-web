@@ -1,4 +1,4 @@
-package projet;
+package fr.iut2.massaa_notesabsences;
 
 import java.util.Collection;
 import java.util.HashMap;

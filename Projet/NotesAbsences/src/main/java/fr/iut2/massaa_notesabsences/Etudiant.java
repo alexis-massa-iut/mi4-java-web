@@ -1,4 +1,4 @@
-package projet;
+package fr.iut2.massaa_notesabsences;
 
 public class Etudiant {
 	
