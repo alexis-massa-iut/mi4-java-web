@@ -1,4 +1,4 @@
-package fr.iut2.massaa_notesabsences;
+package fr.iut2.massaa_notesabsences.data;
 
 public class Etudiant {
 	
