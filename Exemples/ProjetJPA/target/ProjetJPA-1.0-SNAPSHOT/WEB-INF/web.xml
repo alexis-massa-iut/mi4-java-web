@@ -8,46 +8,46 @@
     <!-- Titre de l'application -->
     <context-param>
         <param-name>title</param-name>
-        <param-value>Gestion des etudiants</param-value>
+        <param-value>Projet JPA</param-value>
     </context-param>
 
     <!-- URLs communes aux vues -->
     <context-param>
-        <param-name>header</param-name>
-        <param-value>/WEB-INF/JSP/common/header.jsp</param-value>
+        <param-name>entetedepage</param-name>
+        <param-value>/WEB-INF/JSP/commun/entetedepage.jsp</param-value>
     </context-param>
     <context-param>
-        <param-name>footer</param-name>
-        <param-value>/WEB-INF/JSP/common/footer.jsp</param-value>
+        <param-name>pieddepage</param-name>
+        <param-value>/WEB-INF/JSP/commun/pieddepage.jsp</param-value>
     </context-param>
 
 
     <!--========= Projet Etape 3 MVC =========== -->
-    <!-- Servlet controller -->
+    <!-- Servlet controleur -->
     <servlet>
-        <servlet-name>controller</servlet-name>
-        <servlet-class>fr.massaa.noteabsences.controller.Controller</servlet-class>
+        <servlet-name>controleur</servlet-name>
+        <servlet-class>fr.iut2.ProjetJPA.controleur.Controleur</servlet-class>
         <init-param>
-            <param-name>urlStudents</param-name>
-            <param-value>/WEB-INF/JSP/students.jsp</param-value>
+            <param-name>urlEtudiants</param-name>
+            <param-value>/WEB-INF/JSP/etudiants.jsp</param-value>
         </init-param>
         <init-param>
-            <param-name>urlGroups</param-name>
-            <param-value>/WEB-INF/JSP/groups.jsp</param-value>
+            <param-name>urlGroupes</param-name>
+            <param-value>/WEB-INF/JSP/groupes.jsp</param-value>
         </init-param>
         <init-param>
-            <param-name>urlStudent</param-name>
-            <param-value>/WEB-INF/JSP/student.jsp</param-value>
+            <param-name>urlFicheEtudiant</param-name>
+            <param-value>/WEB-INF/JSP/ficheEtudiant.jsp</param-value>
         </init-param>
         <init-param>
-            <param-name>urlEditStudent</param-name>
-            <param-value>/WEB-INF/JSP/editStudent.jsp</param-value>
+            <param-name>urlEditionEtudiant</param-name>
+            <param-value>/WEB-INF/JSP/editionEtudiant.jsp</param-value>
         </init-param>
     </servlet>
 
     <!-- Mapping URL/Servlet -->
     <servlet-mapping>
-        <servlet-name>controller</servlet-name>
+        <servlet-name>controleur</servlet-name>
         <url-pattern>/do/*</url-pattern>
     </servlet-mapping>
 
